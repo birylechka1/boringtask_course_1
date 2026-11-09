@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Нейродизайнер на Boringtask</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="top-in">
+    <button class="brand" id="homeBtn" aria-label="На главную курса"><span class="mark"></span><span class="txt">Нейродизайнер</span> <span class="brand-on">на</span><img class="brand-logo" src="img/logo.png" alt="Boringtask"></button>
+    <button class="tbtn" id="progBtn" aria-haspopup="dialog"><span class="bars"><i></i><i></i><i></i></span><span class="tl">Программа</span></button>
+    <span class="top-sp"></span>
+    <div class="prog" title="Пройдено модулей"><svg class="ring" viewBox="0 0 36 36" aria-hidden="true"><defs><linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#85ADDB"/><stop offset=".5" stop-color="#BA9EC9"/><stop offset="1" stop-color="#456168"/></linearGradient></defs><circle class="bgc" cx="18" cy="18" r="15"/><circle class="fg" id="ringFg" cx="18" cy="18" r="15" stroke-dasharray="94.25" stroke-dashoffset="94.25"/></svg><span id="progTxt">0/12</span><span class="pt">пройдено</span></div>
+    <a class="cta-sm" href="https://boringtask.ru" target="_blank" rel="noopener">Открыть Boringtask ↗</a>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" hidden role="dialog" aria-modal="true" aria-label="Программа курса">
+  <div class="scrim" data-close></div>
+  <div class="sheet">
+    <div class="sheet-head"><h2>Программа</h2><button class="xbtn" data-close aria-label="Закрыть">×</button></div>
+    <div id="drawerList" style="display:flex;flex-direction:column;gap:1.2rem"></div>
+  </div>
+</div>
+
+<div class="page">
+  <main id="main"></main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
